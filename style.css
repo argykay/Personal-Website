@@ -1,0 +1,493 @@
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Infant|Josefin+Sans");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: 0.2s ease-in-out;
+}
+
+body {
+  color: #a3695f;
+  background-color: #fff;
+  font-family: "Cormorant Infant", serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 0;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.front {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  background-color: #a3695f;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.6em;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.front::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgba(163, 105, 95, 0.2), rgba(75, 85, 86, 1)),
+    url("https://static1.squarespace.com/static/576f1c0ce58c62d50f956d8f/t/578ac483893fc0d1c0df0c1a/1468712101653/?format=1500w")
+      no-repeat center;
+  background-size: cover;
+  display: flex;
+  background-attachment: fixed;
+}
+
+.header-pretitle {
+  display: block;
+  margin: 2%;
+  font-size: 1.5em;
+  position: relative;
+  z-index: 10;
+}
+
+.header-title {
+  font-size: 2.75em;
+  font-weight: normal;
+  line-height: 1;
+  position: relative;
+  z-index: 10;
+  margin: 0;
+}
+
+.block {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-mid {
+  width: 100%;
+  height: 30vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 35px;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.section-mid::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(163, 105, 95, 0.6);
+}
+
+.section-mid p {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.section-mid p,
+.section-mid strong {
+  position: relative;
+  z-index: 2;
+}
+
+.block.block-left {
+  background-color: #a3695f;
+  position: relative;
+}
+
+.block.block-right {
+  background-color: #a3695f;
+  position: relative;
+}
+
+.title {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block.block-left .title {
+  color: #fff;
+}
+
+.block.block-right .title {
+  color: #fff;
+}
+
+.title h1 {
+  transform: rotate(-90deg);
+  font-size: 5vw;
+  white-space: nowrap;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 30px;
+}
+
+.flex {
+  width: 90%;
+  height: 100%;
+}
+
+.grid {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  background-color: #e4d5cb;
+}
+
+.text-box {
+  width: 50%;
+  height: 50vh;
+  display: flex;
+  position: left;
+  background: linear-gradient(rgba(163, 105, 95, 0.2), rgba(75, 85, 86, 1)),
+    url("https://images.unsplash.com/photo-1504221507732-5246c045949b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80")
+      center;
+  background-attachment: fixed;
+}
+
+.p-box {
+  width: 50%;
+  height: 50vh;
+  display: flex;
+  position: right;
+  margin: auto;
+  background-color: #e4d5cb;
+}
+
+.text-box .wrapping {
+  text-align: left;
+  font-size: 30px;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 25%;
+  position: relative;
+  color: #fff;
+}
+
+.text-box .wrapping a {
+  text-decoration: none;
+}
+
+.boxIN {
+  margin: auto;
+  color: #4b5556;
+  font-size: 2.5vh;
+  padding: 5%;
+}
+
+.p-box h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 4em;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  color: #000;
+  opacity: 0.1;
+}
+
+/* Footer */
+
+footer {
+  width: 100%;
+  height: 20vh;
+  background-color: #cca085;
+  position: relative;
+  z-index: -2;
+}
+
+footer div {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Josefin Sans", sans-serif;
+  color: #fff;
+  font-size: 3vw;
+}
+
+#nav {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: right;
+}
+
+#nav ul {
+  list-style: none;
+  text-align: right;
+}
+
+#nav li {
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+}
+
+#nav li:hover {
+  background-color: #fff;
+  text-decoration: underline;
+}
+
+#nav li:hover a {
+  color: #a3695f;
+}
+
+/* Button */
+
+.btn-wrap {
+  margin: 0;
+  height: 80%;
+  padding-bottom: 10px;
+  padding: 0;
+  float: left;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn button {
+  color: #fff;
+  text-align: center;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+  border: none;
+  width: 200px;
+  height: 100px;
+}
+
+.btn {
+  text-align: center;
+  cursor: pointer;
+  margin: auto;
+  font-size: 40px;
+  border-radius: 50px;
+  background-color: #cca085;
+  border: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 200px;
+  height: 150px;
+}
+
+.mobile-menu {
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding: inherit;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* Strip the ul of padding and list styling */
+.mobile-menu ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding-left: 0;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(75, 85, 86, 0.6);
+}
+
+/* Horizontal list with spacing */
+.mobile-menu li {
+  display: inline-block;
+}
+
+/* Style for menu links*/
+.mobile-menu li a {
+  display: block;
+  min-width: 140px;
+  text-decoration: none;
+  transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+}
+
+/* Hide dropdown links until they are needed */
+.mobile-menu li ul {
+  display: none;
+}
+
+/* Make dropdown links vertical */
+.mobile-menu li ul li {
+  display: block;
+  float: none;
+}
+
+/* Prevent text wrapping */
+.mobile-menu li ul li a {
+  width: auto;
+  min-width: 100px;
+}
+
+/* Style 'show menu' label button and hide it by default */
+.mobile-menu .show-menu {
+  text-decoration: none;
+  color: #fff;
+  background: rgba(163, 105, 95, 0.9);
+  text-align: center;
+  padding: 3%;
+  display: none;
+  cursor: pointer;
+}
+
+/* Hide checkbox */
+.mobile-menu input[type="checkbox"] {
+  display: none;
+}
+
+/* Show menu when invisible checkbox is checked */
+.mobile-menu input[type="checkbox"]:checked ~ #menu {
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  .grid p-box {
+    padding: 5em 1em 0 1em;
+  }
+}
+
+@media (max-width: 760px) {
+  .mobile-menu {
+    content: "";
+    height: 8%;
+    width: 100%;
+    padding: 0;
+    float: right;
+  }
+
+  /*Make dropdown links appear inline*/
+  .mobile-menu ul {
+    position: static;
+    display: none;
+  }
+
+  /*Make all menu links full width*/
+  .mobile-menu ul li,
+  .mobile-menu li a {
+    width: 100%;
+  }
+
+  /*Display 'show menu' link*/
+  .mobile-menu .show-menu {
+    display: block;
+  }
+
+  .header-title {
+    font-size: 7vw;
+    padding: 0 15% 0 15%;
+  }
+
+  .header-pretitle {
+    font-size: 5vw;
+    padding: 0 15% 0 15%;
+  }
+
+  .section-mid {
+    font-size: 4vw;
+  }
+
+  .grid {
+    flex-direction: column;
+    height: 50%;
+    width: auto;
+  }
+
+  .grid .text-box {
+    height: 35%;
+    width: 100%;
+    padding: 5px;
+  }
+
+  .text-box .wrapping {
+    font-size: 2em;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    padding-bottom: 0;
+  }
+
+  .grid .p-box {
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+
+  .p-box p {
+    width: 100%;
+    height: auto;
+    color: #4b5556;
+    padding: 5px;
+  }
+
+  .p-box {
+    width: 100%;
+    height: auto;
+    color: #4b5556;
+    padding: 0%;
+  }
+
+  footer div a {
+    font-size: 5vw;
+  }
+
+  .btn-wrap {
+    height: 100px;
+    display: flex;
+    margin: auto;
+  }
+}
